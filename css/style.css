@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "Signatra";
+  src: url(../font/Signatra/Signatra.ttf);
+}
+
+@font-face {
+  font-family: "Gibson-regular";
+  src: url(../font/GIBSON/Gibson-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(../font/pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+  font-family: "FiraMono-Regular";
+  src: url(../font/FiraMono/FiraMono-Regular.ttf);
+}
+
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+body{
+  background:  #e0e0e026;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7F00FF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+}
+
+
+
+.navbar-brand {
+  font-family: "Signatra", serif;
+  font-size: 2.3rem;
+}
+
+
+.view,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  /* overflow-x:hidden; */
+}
+
+.nav-item>.nav-link {
+  font-family: "Gibson-regular";
+  text-transform: uppercase;
+  font-size: smaller;
+
+}
+
+
+
+
+.view {
+  background-image: url(../img/GLOW-19-XAVIER-PORTELA-5D3_0773.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-footer,
+.top-nav-collapse {
+  background: rgb(64, 7, 170);
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(64, 7, 170, 0.8), rgba(88, 2, 87, 0.8));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(64, 7, 170, 0.8), rgba(88, 2, 87, 0.8));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.titulo {
+  white-space: nowrap;
+  letter-spacing: 0.6rem;
+  font-family: "Pacifico";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.904);
+
+}
+
+.letter {
+  font-size: larger;
+  color: rgb(255, 50, 228);
+
+}
+
+
+
+
+
+
+.girl {
+  width: 450px;
+}
+
+.subtitulo {
+  font-size: 3rem;
+  font-family: "Gibson-regular";
+  font-weight: bolder;
+  color: #aa00ff;
+
+}
+
+.info {
+  font-family: "open sans";
+
+}
+
+.icon-css {
+  width: 60px;
+  height: 60px;
+}
+
+.title-icon {
+  font-family: "Pacifico";
+  color: #c20894d0;
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  .titulo {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 769px) {
+  .titulo {
+    font-size: 45px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 26px;
+
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .navbar {
+    background: rgb(88, 2, 87);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(64, 7, 170, 0.8), rgba(88, 2, 87, 0.8));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(64, 7, 170, 0.8), rgba(88, 2, 87, 0.8));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+  }
+
+  .navbar-toggler-icon {
+    margin-left: -1rem;
+  }
+}
+
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: #0008 1px 1px 6px;
+}
+
+@media (max-width: 575px) {
+  .navbar-toggler-icon {
+    margin-left: -1rem;
+  }
+
+}
+
+.my--20 {
+  margin-top: -70px;
+}
+
+.gallery-img {
+  padding: 0;
+  margin: 0;
+}
+
+#sobremi::before,
+#habilidades::before,
+#proyectos::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
+}
+
+
+.parallax {
+  background: url("../img/keyboard.jpg");
+  background-blend-mode:hard-light;
+  background-color:rgba(230, 10, 156, 0.644);
+  background-attachment: fixed;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  position: absolute;
+
+}
+
+.parallax-heigth{
+  height: 400px;
+}
+
+/* .m-top{
+  margin-top:8rem;
+} */
+
+.frase{
+  font-family: "Signatra";
+  font-size:2.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.904);
+}
+
+.autor{
+  font-family: "Gibson-regular";
+  font-size:1.5rem;
+}
+
+
+.logo-footer{
+  font-family: "Signatra";
+  font-size:2.5rem;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ 
+}
+
+.footerCopyright{
+  color: rgba(255, 255, 255, 0.424);
+  font-family:"open sans";
+  
+
+}
+
+.fuente{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.contacto{
+  font-family:"Gibson-regular";
+  color:rgba(245, 245, 245, 0.698);
+ 
+}
+
+
+.btn-rounded{
+  border-radius: 10em;
+}
+
+.formulario{
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
+  -moz-box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
+  box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  font-family:"Gibson-regular";
+  color: rgb(0, 0, 0);
+  
+}
+
+.titulo-form{
+  color:rgb(217, 97, 221);
+  
+}
+
+/* color-border-input */
+.md-form input:not([type]),
+.md-form input[type="text"]:not(.browser-default), 
+.md-form input[type="password"]:not(.browser-default), 
+.md-form input[type="email"]:not(.browser-default), 
+.md-form input[type="url"]:not(.browser-default),
+.md-form input[type="time"]:not(.browser-default),
+.md-form input[type="date"]:not(.browser-default), .md-form input[type="datetime"]:not(.browser-default),
+.md-form input[type="datetime-local"]:not(.browser-default), .md-form input[type="tel"]:not(.browser-default), 
+.md-form input[type="number"]:not(.browser-default), .md-form input[type="search"]:not(.browser-default), 
+.md-form input[type="search-md"], .md-form textarea.md-textarea {
+  border-bottom: 1px solid #6a00ec;
+}
+
+.btn-gradient {
+  background: #AA076B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #61045F, #AA076B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: rgb(206, 206, 206);
+}
+
+.btn-gradient:hover{
+  color:white;
+}
