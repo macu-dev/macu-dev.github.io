@@ -155,10 +155,25 @@ html {
 
 @media (max-width: 768px) {
   .titulo {
-    font-size: 26px;
+    font-size: 40px;
 
   }
 }
+
+@media (max-width: 460px) {
+  .titulo {
+    font-size: 29px;
+
+  }
+}
+
+@media (max-width: 374px) {
+  .titulo {
+    font-size: 24px;
+
+  }
+}
+
 
 @media only screen and (max-width:768px) {
   .navbar {

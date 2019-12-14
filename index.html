@@ -26,7 +26,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
       <div class="container w-100 ml-0">
         
-        <!-- Brand -->
+        <!-- Brand (logo)-->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <p class="navbar-brand p-0 m-0"><strong>Macu</strong></p>
         </div>
@@ -34,33 +34,32 @@
         <!-- Collapse -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
       
-      <!-- Links -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         
-        <!-- Left -->
-        <ul class="navbar-nav ml-5 text-center smooth-scroll list-unstyled">
-          <li class="nav-item mr-5">
-            <a class="nav-link hvr-underline-from-left" href="#sobremi">sobre mi
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link hvr-underline-from-left" href="#habilidades">habilidades</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link hvr-underline-from-left" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item mr-5">
-            <a class="nav-link hvr-underline-from-left" href="https://mdbootstrap.com/education/bootstrap/"
-            target="_blank">contáctame</a>
-          </li>
-        </ul>
-      </div>
+          <!-- right -->
+          <ul class="navbar-nav ml-5 text-center smooth-scroll list-unstyled">
+            <li class="nav-item mr-5">
+              <a class="nav-link hvr-underline-from-left" href="#sobremi">sobre mi
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link hvr-underline-from-left" href="#habilidades">habilidades</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link hvr-underline-from-left" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link hvr-underline-from-left" href="#contactame">contáctame</a>
+            </li>
+          </ul>
+        </div>
       
-    </div>
+      </div>
     
     </nav>
     <!-- Navbar -->
@@ -92,15 +91,13 @@
     <!-- Mask & flexbox options-->
 
   </div>
-
-
   <!--Main layout-->
-  
   <main>
+    <!-- star my proyect -->
     <div class="container">
 
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn slower">
+      <!--Section: sobre mi-->
+      <section class="mt-5 wow fadeIn slower" id="sobremi">
 
         <!--Grid row-->
         <div class="row">
@@ -114,7 +111,7 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 mb-5 col-lg-6 py-5 col-12 col-xl-5 px-5" id="sobremi">
+          <div class="col-md-6 mb-5 col-lg-6 py-5 col-12 col-xl-5 px-5">
 
             <!-- Main heading -->
             <h3 class="subtitulo text-center h1 mb-3">Sobre mi...</h3>
@@ -135,14 +132,16 @@
         <!--Grid row-->
 
       </section>
-      <!--Section: Main info-->
+    
 
-      <hr class="my--20 mb-5">
+      <hr class="my--40 mb-5" id="habilidades" >
 
-      <!--Section: Main features & Quick Start-->
+      <br/>
+
+      <!--Section: Habilidades-->
       <section>
 
-        <h3 class="h3 text-center mb-5 subtitulo wow fadeIn slower" id="habilidades">Habilidades</h3>
+        <h3 class="h3 text-center my-2 mb-5 subtitulo wow fadeIn slower">Habilidades</h3>
 
         <!--Grid row-->
         <div class="row wow fadeIn slower">
@@ -205,7 +204,6 @@
 
           <!--Grid column-->
           <div class="col-lg-12 col-md-12 px-5 wow fadeIn slower">
-
             <div class="d-flex justify-content-center">
               <img src="./img/coder.svg" class="img-fluid girl" alt="girl">
             </div>
@@ -216,25 +214,26 @@
         <!--/Grid row-->
 
       </section>
-      <!--Section: Main features & Quick Start-->
+      
 
-      <hr class="my-5">
+      <hr class="my-5" id="proyectos">
+      <br/>
 
-      <!--Section: Not enough-->
+      <!--Section: proyectos-->
       <section>
 
-        <h2 class="my-5 h3 text-center subtitulo wow fadeIn" id="proyectos">Proyectos</h2>
+        <h2 class="my-2 h3 text-center subtitulo wow fadeIn">Proyectos</h2>
 
         <div class="row wow fadeIn slower">
 
-           <!--Grid column-->
-           <div class="col-lg-12 col-md-12 px-5 mb-5">
-
-              <div class="d-flex justify-content-center">
-                <img src="./img/web3.svg" class="img-fluid girl" alt="girl">
-              </div>
+          <!--Grid column-->
+          <div class="col-lg-12 col-md-12 px-5 mb-5">
+            <div class="d-flex justify-content-center">
+              <img src="./img/web3.svg" class="img-fluid girl" alt="girl">
             </div>
-            <!--/Grid column-->
+          </div>
+          <!--/Grid column-->
+
           <!-- gallery -->
           <figure class="gallery-img col-md-4 view overlay zoom">
             <a href="img/pagina1.jpg" data-size="1600x1067">
@@ -291,133 +290,132 @@
           </figure>
 
         </div>
-
-        <!-- fin de la gallery -->
+         <!-- end gallery -->
+       
         
-        <hr class="my-5">
+        <hr class="my-4" id="contactame">
+        <br/>
 
-        <!--First row-->
-        <h3 class="h3 text-center mb-5 subtitulo wow fadeIn slower" id="habilidades">Contáctame</h3>
+      
+        <h3 class="h3 text-center mb-5 my-2 mt-5 subtitulo wow fadeIn slower">Contáctame</h3>
+        <!-- row -->
         <div class="row features-small mb-5 mt-3 wow fadeIn slower">
 
+          <!--Grid column-->
           <div class="col-md-6 mb-6 col-lg-6 px-3 py-2 col-10">
 
             <img src="./img/solo-dilo.svg" class="img-fluid girl ml-3" alt="girl">
     
-           </div>
-              <!--Grid column-->
+          </div>
+          <!--Grid column-->   
     
-              <!--Grid column-->
-           <div class="col-md-5 mb-5 col-lg-5 py-5 col-9 col-xl-5 px-5 ml-5 formulario">
-             <!--Section: Contact v.2-->
-              <div class="mb-4">
+          <!--Grid column-->
+          <div class="col-md-5 mb-5 col-lg-5 py-5 col-9 col-xl-5 px-5 ml-5 formulario">
+            <!--Section: Contacto-->
+            <div class="mb-4">
 
               <!--Section heading-->
               <h2 class="h3-responsive font-weight-bold text-center my-1 ml-2 pl-1 titulo-form">Formulario de contacto</h2>
-              <!--Section description-->
+              <!-- row -->
+              <div class="row ml-0">
 
-                <div class="row ml-0">
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-5 ml-0 col-xl-12">
+                  <form id="contact-form" name="contact-form" action="" method="POST">
 
-                  <!--Grid column-->
-                  <div class="col-md-12 mb-md-0 mb-5 ml-0 col-xl-12">
-                      <form id="contact-form" name="contact-form" action="" method="POST">
+                    <!--Grid row-->
+                    <div class="row">
 
-                          <!--Grid row-->
-                          <div class="row">
-
-                              <!--Grid column-->
-                              <div class="col-md-12">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="name Form-email5" name="name" class="form-control">
-                                      <label for="name" class="">nombre completo</label>
-                                  </div>
-                              </div>
-                              <!--Grid column-->
-
-                              <!--Grid column-->
-                              <div class="col-md-12">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="email" name="email" class="form-control">
-                                      <label for="email" class="">email</label>
-                                  </div>
-                              </div>
-                              <!--Grid column-->
-
-                          </div>
-                          <!--Grid row-->
-
-                          <!--Grid row-->
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="subject" name="subject" class="form-control">
-                                      <label for="subject" class="">asunto</label>
-                                  </div>
-                              </div>
-                          </div>
-                          <!--Grid row-->
-
-                          <!--Grid row-->
-                          <div class="row">
-
-                              <!--Grid column-->
-                              <div class="col-md-12">
-
-                                  <div class="md-form">
-                                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                      <label for="message">mensaje</label>
-                                  </div>
-
-                              </div>
-                          </div>
-                          <!--Grid row-->
-
-                      </form>
-
-                      <div class="text-center mb-3 col-md-12 text-md-left">
-                          <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="name Form-email5" name="name" class="form-control">
+                          <label for="name" class="">nombre completo</label>
+                        </div>
                       </div>
-                      <div class="status"></div>
-                  </div>
-                  <!--Grid column-->
+                        
 
-                  
-                  <!--Grid column-->
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">email</label>
+                        </div>
+                      </div>
+                      <!--Grid column-->
+
+                    </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                    <div class="row">
+                      <!-- grid column -->
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">asunto</label>
+                        </div>
+                      </div>
+                    </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                    <div class="row">
+
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                        <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">mensaje</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!--Grid row-->
+
+                  </form>
+
+                    <div class="text-center mb-3 col-md-12 text-md-left">
+                      <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
 
               </div>
 
-          </div>
-          <!--Section: Contact v.2-->
-              
-                    
+            </div>
+            <!--Section: Contacto-->
+          </div>    
+        </div>            
 
-          </section>
-                <!-- end gallery -->
+      </section>
+     
 
-              <section class="parallax-heigth container white-text">
-                  <!-- <div class="container w-100 d-flex justify-content-center white-text mx-5 " -->
-                <!-- Parallax -->
-                <div class="parallax parallax-heigth d-flex justify-content-center align-items-center">
-                  <span class="wow slideInRight slow frase m-top mx-5 p-0">Si piensas que los usuarios de tus programas son idiotas,<br/>
-                    solo los idiotas usaran tus programas.<br/>
-                    <span class="autor">Linux Torvalds</span>                         
-                  </span>
-                </div>
-              </section>
-              <!-- fin del parallax -->
+      <section class="parallax-heigth container white-text">
+        <!-- <div class="container w-100 d-flex justify-content-center white-text mx-5 " -->
+        <!-- Parallax -->
+        <div class="parallax parallax-heigth d-flex justify-content-center align-items-center">
+          <span class="wow slideInRight slow frase m-top mx-5 p-0">Si piensas que los usuarios de tus programas son idiotas,<br/>
+            solo los idiotas usaran tus programas.<br/>
+            <span class="autor">Linux Torvalds</span>                         
+          </span>
+        </div>
+      </section>
+      <!-- fin del parallax -->
+    </div>
+  </main>
+  <!--Main layout-->
 
-            </main>
-            <!--Main layout-->
+  <!--Footer-->
+  <footer class="page-footer text-center font-small pt-4 wow fadeIn">
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
 
-            <!--Footer-->
-            <footer class="page-footer text-center font-small pt-4 wow fadeIn">
-              <!-- Footer Links -->
-            <div class="container-fluid text-center text-md-left">
-
-              <!-- Grid row -->
-                <div class="row pt-4 pb-4">
-                  <!-- Grid column -->
-                  <div class="col-md-6 mt-md-0 mt-1 text-center">
+      <!-- Grid row -->
+      <div class="row pt-4 pb-4">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-1 text-center">
             
           <!-- Content -->
           <h5 class="logo-footer mt-1 p-0">Macu</h5>
@@ -432,7 +430,7 @@
         <div class="col-md-3 mb-md-0 mb-3">
   
           <!-- Links -->
-          <h2 class="text-uppercase fuente">Contacto</h5>
+          <h2 class="text-uppercase fuente">Contacto</h2>
   
           <ul class="list-unstyled contacto">
             <li>
@@ -488,8 +486,7 @@
   </footer>
   <!--/.Footer-->
 
-
-  <!-- End your project here-->
+  <!-- end my proyect-->
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -502,7 +499,5 @@
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript" src="js/app.js"></script>
 
-
 </body>
-
 </html>
