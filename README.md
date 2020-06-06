@@ -1,4 +1,8 @@
 # Sitio Web Personal
 
 
-Este es mi portafolio
+En este repositorio contiene mi portafolio :smiley:
+
+
+
+![imgPage](img/pagina.gif)
