@@ -227,8 +227,8 @@ html {
 
 .parallax {
   background: url("../img/keyboard.jpg");
-  background-blend-mode:hard-light;
   background-color:rgba(230, 10, 156, 0.644);
+  background-blend-mode:hard-light;
   background-attachment: fixed;
   background-position: center right;
   background-repeat: no-repeat;
