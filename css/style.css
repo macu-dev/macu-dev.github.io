@@ -339,3 +339,21 @@ html {
 .btn-gradient:hover{
   color:white;
 }
+
+/* swal style */
+
+.swal2-image{
+  margin: 0;
+}
+.swal2-header{
+  padding: 0 2em;
+}
+
+.swal2-content{
+  padding: 0;
+}
+
+
+.ierror{
+  border-bottom: 1px solid red !important;
+}

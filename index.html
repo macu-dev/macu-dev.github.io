@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Hover css -->
   <link rel="stylesheet" href="css/hover.css">
@@ -330,7 +331,7 @@
                         <!--Grid column-->
                         <div class="col-md-12">
                           <div class="md-form mb-0">
-                            <input type="text" id="name Form-email5" name="name" class="form-control">
+                            <input type="text" id="name" name="name" class="form-control">
                             <label for="name" class="">nombre completo</label>
                           </div>
                         </div>
@@ -376,7 +377,7 @@
                     </form>
   
                       <div class="text-center mb-3 col-md-12 text-md-left">
-                        <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                        <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="submitForm();">Enviar</a>
                       </div>
                       <div class="status"></div>
                   </div>
@@ -434,19 +435,10 @@
   
           <ul class="list-unstyled contacto">
             <li>
-              Jujuy 1752
-            </li>
-            <li>
              Rosario - Argentina
             </li>
             <li>
               mariaclaudiaperezes@gmail.com
-            </li>
-            <li>
-              +54 341 8568176
-            </li>
-            <li>
-              +54 341 7845752
             </li>
           </ul>
   
@@ -496,8 +488,9 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" type="module" src="js/validator.js"></script>
+  <script type="text/javascript" src="js/sweet2Alert.min.js"></script>
+  <script type="text/javascript" type="module" src="js/app.js"></script>
 
 </body>
 </html>
