@@ -1,0 +1,20 @@
+version: '3'
+services:
+  macudev:
+    build: .
+    restart: always
+    container_name: macudev
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=macu.ptah.tech
+      - VIRTUAL_PORT=3000
+      - LETSENCRYPT_HOST=macu.ptah.tech
+      - LETSENCRYPT_EMAIL=mariaclaudiaperezes@gmail.com
+
+networks:
+  default:
+     external:
+       name: webproxy
