@@ -1,0 +1,22 @@
+{
+  "name": "macu-dev.github.io",
+  "version": "1.0.0",
+  "description": "En este repositorio contiene mi portafolio :smiley:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macu-dev/macu-dev.github.io.git"
+  },
+  "author": "Maria Claudia Pérez Escalante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macu-dev/macu-dev.github.io/issues"
+  },
+  "homepage": "https://github.com/macu-dev/macu-dev.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
