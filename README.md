@@ -4,5 +4,5 @@ En este repositorio contiene mi portafolio :smiley:
 
 
 
-![imgPage](img/pagina.gif)
+![imgPage](public/img/pagina.gif)
 
