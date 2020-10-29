@@ -137,6 +137,37 @@ html {
 }
 
 
+/* imagenes habilidades */
+
+.box-img{
+  width: 320px;
+  height: 320px;
+  padding: 35px;
+  background-color: #ebeae7;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.box-img:hover {
+  transition: 0.4s;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.imagenes-habilidades{
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.css-img {
+  transform: scale(1.3);
+}
+
+.responsive-img{
+  transform: scale(1.1);
+}
+
 
 
 
@@ -158,12 +189,29 @@ html {
     font-size: 40px;
 
   }
+
+  .box-img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+  }
 }
 
 @media (max-width: 460px) {
   .titulo {
     font-size: 29px;
 
+  }
+
+  .box-img{
+    width: 150px;
+    height: 150px;
+    padding:8px;
+  }
+
+  .col-habilidades{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
   }
 }
 
@@ -357,3 +405,4 @@ html {
 .ierror{
   border-bottom: 1px solid red !important;
 }
+
