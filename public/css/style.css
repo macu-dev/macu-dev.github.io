@@ -18,15 +18,12 @@
   src: url(../font/FiraMono/FiraMono-Regular.ttf);
 }
 
-
 @font-face {
   font-family: 'montserratbold';
   src: url(../font/Monserrat/montserrat-bold-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
-
 
 /* scroll bar */
 /* width */
@@ -55,8 +52,6 @@ body{
   border-radius: 10px;
 }
 
-
-
 .navbar-brand {
   font-family: "Signatra", serif;
   font-size: 2.3rem;
@@ -82,9 +77,6 @@ html {
 
 }
 
-
-
-
 .view {
   background-image: url(../img/GLOW-19-XAVIER-PORTELA-5D3_0773.jpg);
   background-repeat: no-repeat;
@@ -101,7 +93,6 @@ html {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-
 
 .titulo {
   white-space: nowrap;
@@ -156,7 +147,6 @@ html {
 
 
 /* imagenes habilidades */
-
 .box-img{
   width: 250px;
   height: 200px;
@@ -185,8 +175,6 @@ html {
 .responsive-img, .js-img{
   transform: scale(1.1);
 }
-
-
 
 
 @media (min-width: 992px) {
@@ -243,7 +231,6 @@ html {
   }
 }
 
-
 @media only screen and (max-width:768px) {
   .navbar {
     background: rgb(88, 2, 87);
@@ -252,9 +239,6 @@ html {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(64, 7, 170, 0.8), rgba(88, 2, 87, 0.8));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
   }
 
   .navbar-toggler-icon {
@@ -293,7 +277,6 @@ html {
   visibility: hidden;
 }
 
-
 .parallax {
   background: url("../img/keyboard.jpg");
   background-color:rgba(230, 10, 156, 0.644);
@@ -330,19 +313,16 @@ html {
   font-size:1.5rem;
 }
 
-
 .logo-footer{
   font-family: "Signatra";
   font-size:2.5rem;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
- 
 }
 
 .footerCopyright{
   color: rgba(255, 255, 255, 0.424);
   font-family:"open sans";
   
-
 }
 
 .fuente{
@@ -358,7 +338,6 @@ html {
  
 }
 
-
 .btn-rounded{
   border-radius: none !important;
 }
@@ -373,12 +352,10 @@ html {
   -webkit-border-radius: 35px 35px 35px 35px;
   font-family:"Gibson-regular";
   color: rgb(0, 0, 0);
-  
 }
 
 .titulo-form{
-  color:#ec008ece;
-  
+  color:#ec008ece; 
 }
 
 /* color-border-input */
@@ -395,13 +372,11 @@ html {
   border-bottom: 1px solid #ce1888b4;
 }
 
-
 .md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search-md"]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
   box-shadow: none;
 }
 
 /* input style */
-
 .md-form input:not([type]):focus:not([readonly])+label,.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="search-md"]:focus:not([readonly])+label,.md-form textarea.md-textarea:focus:not([readonly])+label {
   color: #525353
 }
@@ -412,7 +387,6 @@ html {
   box-shadow: 0 1px 0 0 #ce1888b4
 }
 
-
 .btn-box{
   position: relative;
   z-index: 0;
@@ -421,13 +395,12 @@ html {
   color:#ec008c;
   outline: none;
   font-weight: 600;
-  background-color: white;
+  background-color: rgba(235, 229, 229, 0.932);
   transition: all .7s ease;
 }
 .btn-gradient:hover{
   color:#ff25a8a2;
 }
-
 
 .btn-box:before{
   content:'';
@@ -454,7 +427,6 @@ html {
   left:0;
   top:0;
   /* border-radius: .6rem; */
- 
 }
 
 @keyframes moving-gradient {
@@ -471,7 +443,6 @@ html {
     opacity:1;
   }
 }
-
 
 .swal2-image{
   margin: 0;
