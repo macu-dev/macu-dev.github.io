@@ -364,7 +364,7 @@ html {
 }
 
 .formulario{
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(223, 223, 223, 0.281);
   -webkit-box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
   -moz-box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
   box-shadow: 8px 10px 27px -4px rgba(212,205,212,0.69);
