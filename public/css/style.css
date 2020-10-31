@@ -130,6 +130,20 @@ html {
 
 }
 
+.sobremi, .habilidades, .proyectos, .contactame{
+  position: relative;
+}
+.sobremi::before, .habilidades::before, .proyectos::before, .contactame::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 4px;
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top:0;
+}
+
 .icon-css {
   width: 60px;
   height: 60px;
@@ -380,6 +394,12 @@ html {
 .md-form input[type="search-md"], .md-form textarea.md-textarea {
   border-bottom: 1px solid #6a00ec;
 }
+
+
+.md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search-md"]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+  box-shadow: none;
+}
+
 
 .btn-gradient {
   background: #AA076B;
