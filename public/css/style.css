@@ -360,7 +360,7 @@ html {
 
 
 .btn-rounded{
-  border-radius: 10em;
+  border-radius: none !important;
 }
 
 .formulario{
@@ -377,7 +377,7 @@ html {
 }
 
 .titulo-form{
-  color:rgb(228, 117, 117);
+  color:#ec008ece;
   
 }
 
@@ -400,22 +400,72 @@ html {
   box-shadow: none;
 }
 
+/* input style */
 
-.btn-gradient {
-  background: #AA076B;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #61045F, #AA076B);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #61045F, #AA076B);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: rgb(206, 206, 206);
+.md-form input:not([type]):focus:not([readonly])+label,.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label,.md-form input[type="search-md"]:focus:not([readonly])+label,.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #525353
 }
 
+
+.btn-box{
+  position: relative;
+  z-index: 0;
+}
+.btn-gradient{
+  color:#ec008c;
+  outline: none;
+  font-weight: 600;
+  background-color: white;
+  transition: all .7s ease;
+}
 .btn-gradient:hover{
-  color:white;
+  color:#ff25a8a2;
 }
 
-/* swal style */
+
+.btn-box:before{
+  content:'';
+  background: linear-gradient(135deg, blue, red, yellow,green,violet, orange,crimson,skyblue, peru, magenta, cyan );
+  position: absolute;
+  top:-2px;
+  left:14px;
+  background-size: 400%;
+  z-index: -1;
+  width: calc( 100% - 27px );
+  height: calc( 100% + 4px );
+  filter: blur(2px);
+  animation:moving-gradient 10s linear infinite;
+  /* border-radius: 10px; */
+}
+
+.btn-box:after{
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  /* border-radius: .6rem; */
+ 
+}
+
+@keyframes moving-gradient {
+  0%{
+    background-position: 0 0;
+    opacity:1;
+  }
+  50%{
+    background-position: 250% 0;
+  }
+
+  100%{
+    background-position: 0 0;
+    opacity:1;
+  }
+}
+
 
 .swal2-image{
   margin: 0;
@@ -430,6 +480,6 @@ html {
 
 
 .ierror{
-  border-bottom: 1px solid red !important;
+  border-bottom: 2px solid red !important;
 }
 
