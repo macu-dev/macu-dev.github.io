@@ -158,7 +158,7 @@ html {
 
 .box-music{
   width: 100%;
-  height:200px;
+  height:250px;
   position:relative;
 }
 
@@ -180,8 +180,12 @@ html {
   border-radius:8px;
 }
 
-.overlay{
+.overlay-img{
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -194,8 +198,9 @@ html {
 }
 
 
-.icon-play{
+.icon-player{
   color:#fff;
+  fill: #fff;
   width:30px;
   height:30px;
   position:absolute;
@@ -205,7 +210,30 @@ html {
   transform: translate(-50%, -50%);
 }
 
-.overlay:hover{
+.info-song, .info-song-title{
+  text-align:center;
+  font-weight: bolder;
+  color:#fff;
+  font-family: 'Mo';
+  display: inline-block;
+}
+
+.info-song-title{
+  font-family:"Signatra";
+  font-size:1.56rem;
+  width: 100%;
+}
+
+.info-song{
+  margin-left:1px;
+  margin-right:1px;
+  margin-top:50%;
+  font-family: 'montserratbold';
+}
+
+
+
+.overlay-img:hover{
   opacity:1;
   cursor: pointer;
 }
@@ -268,7 +296,17 @@ html {
   .box-music{
     height: 150px;
   }
+
+  .info-song-title{
+    font-size:1.26rem;
+  }
+  
+  .info-song{
+   font-size: 0.59rem;
+  }
+  
 }
+
 
 @media (max-width: 374px) {
   .titulo {
