@@ -150,10 +150,16 @@ html {
 .box-img{
   width: 250px;
   height: 200px;
-  padding: 25px;
-  background-color: #ebeae7;
   border-radius: 8px;
   transition: 0.3s;
+  padding: 25px;
+  background-color: #ebeae7;
+}
+
+.box-music{
+  width: 100%;
+  height:200px;
+  position:relative;
 }
 
 .box-img:hover {
@@ -162,11 +168,35 @@ html {
   cursor: pointer;
 }
 
-.imagenes-habilidades{
+.imagenes-habilidades, .imagenes-musica{
   max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
+
+.imagenes-musica{
+  object-fit: cover;  
+  width:100%;
+  border-radius:8px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 50, 50, 0.555);
+  border-radius:8px;
+  transition: opacity 120ms ease 0s;
+  opacity: 0;
+}
+
+.overlay:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
 
 .css-img {
   transform: scale(1.3);

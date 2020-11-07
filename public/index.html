@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Mi nombre es María Claudia, pero me dicen Macu">
+  <meta name="keywords" content="web developer, Macu, github, projects">
   <title>Portafolio</title>
   <!-- MDB icon -->
   <link rel="icon"  href="img/codigo.png" type="image/x-icon">
@@ -130,41 +132,47 @@
         </div>
         <!--Grid row-->
 
-        <h3 class="subtitulo sobremi text-left h1 mb-3">Mi música favorita</h3>
-        <div class="row">
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="1">
-              <img src="img/beatles2.jpg" alt="beatles">
+        <h3 class="subtitulo sobremi text-left mt-4 h1 mb-5">Mi música favorita</h3>
+        <div class="row mt-4 w-100 mb-5">
+          <div class="col-xl-2 col-md-2 col-2 wd-100 h-50">
+            <div class="box-music w-100" data-set="1">
+              <img src="img/beatles2.jpg" class="imagenes-musica" alt="beatles">
+              <div class="overlay"></div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="2">
-              <img src="img/carpenters.jpg" alt="carpenters">
+          <div class="col-xl-2 col-md-2 col-2 w-100 h-50">
+            <div class="box-music w-100" data-set="2">
+              <img src="img/carpenters.jpg" class="imagenes-musica" alt="carpenters">
+              <div class="overlay"></div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="3">
-              <img src="img/beegees.jpg" alt="bee gees">
+          <div class="col-xl-2 col-md-2 col-2 w-100 h-50">
+            <div class="box-music w-100" data-set="3">
+              <img src="img/beegees.jpg" class="imagenes-musica" alt="bee gees">
+              <div class="overlay"></div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="4">
-              <img src="img/ximena-sariñana.jpg" alt="ximena sariñana">
+          <div class="col-xl-2 col-md-2 col-2 w-100 h-50">
+            <div class="box-music w-100" data-set="4">
+              <img src="img/ximena-sariñana.jpg" class="imagenes-musica" alt="ximena sariñana">
+              <div class="overlay"></div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="5">
-              <img src="img/natalia-lafourcade.jpg" alt="natalia lafourcade">
+          <div class="col-xl-2 col-md-2 col-2 w-100 h-50">
+            <div class="box-music w-100" data-set="5">
+              <img src="img/natalia-lafourcade.jpg" class="imagenes-musica" alt="natalia lafourcade">
+              <div class="overlay"></div>
             </div>
           </div>
 
-          <div class="col-xl-2 col-md-2 col-2">
-            <div class="box-music" data-set="6">
-              <img src="img/queen.jpg" alt="queen">
+          <div class="col-xl-2 col-md-2 col-2 w-100 h-50">
+            <div class="box-music w-100" data-set="6">
+              <img src="img/queen.jpg" class="imagenes-musica" alt="queen">
+              <div class="overlay"></div>
             </div>
           </div>
 
@@ -382,7 +390,7 @@
   
                   <!--Grid column-->
                   <div class="col-md-12 mb-md-0 mb-5 ml-0 col-xl-12">
-                    <form id="contact-form" name="contact-form" action="" method="POST">
+                    <form id="contact-form" name="contact-form" action="" method="POST" role="form">
   
                       <!--Grid row-->
                       <div class="row">
@@ -390,7 +398,7 @@
                         <!--Grid column-->
                         <div class="col-md-12">
                           <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
+                            <input type="text" id="name" name="name" class="form-control" aria-required="true">
                             <label for="name" class="">nombre completo</label>
                           </div>
                         </div>
@@ -399,7 +407,7 @@
                         <!--Grid column-->
                         <div class="col-md-12">
                           <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="text" id="email" name="email" class="form-control" aria-required="true">
                             <label for="email" class="">email</label>
                           </div>
                         </div>
@@ -413,7 +421,7 @@
                         <!-- grid column -->
                         <div class="col-md-12">
                           <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
+                            <input type="text" id="subject" name="subject" class="form-control" aria-required="true">
                             <label for="subject" class="">asunto</label>
                           </div>
                         </div>
@@ -426,7 +434,7 @@
                         <!--Grid column-->
                         <div class="col-md-12">
                           <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" aria-required="true"></textarea>
                             <label for="message">mensaje</label>
                           </div>
                         </div>
@@ -436,7 +444,7 @@
                     </form>
   
                       <div class="text-center mb-3 col-md-12 text-md-left btn-box">
-                        <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="submitForm();">Enviar</a>
+                        <button type="button" class="btn btn-gradient  btn-block btn-rounded z-depth-1 waves-effect waves-light" onclick="submitForm();" name="Enviar" data-message="Esto es un botón para enviar el contenido del formulario" tabindex="0">Enviar</a>
                       </div>
                       <div class="status"></div>
                   </div>
@@ -452,7 +460,7 @@
       </section>
      
 
-      <section class="parallax-heigth container white-text">
+      <section class="parallax-heigth container white-text" role="section">
         <!-- <div class="container w-100 d-flex justify-content-center white-text mx-5 " -->
         <!-- Parallax -->
         <div class="parallax parallax-heigth d-flex justify-content-center align-items-center">
