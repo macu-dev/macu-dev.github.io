@@ -2,6 +2,7 @@
 
 new WOW().init()
 
+// formulario
 const form = document.getElementById('contact-form');
 const validator = new Validator('ierror');
 
@@ -51,3 +52,6 @@ function submitForm(){
 
   }
 }
+
+
+// play music
