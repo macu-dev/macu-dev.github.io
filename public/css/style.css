@@ -264,6 +264,10 @@ html {
   .frase{
     font-size: 2.26rem !important;
   }
+
+  .box-music{
+    height: 150px;
+  }
 }
 
 @media (max-width: 374px) {
