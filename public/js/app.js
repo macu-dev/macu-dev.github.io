@@ -17,7 +17,7 @@ function submitForm(){
   let result = validator.isValid(values);
   if (result.isvalid) {
     Swal.fire({
-      imageUrl:'public/img/thank.gif',
+      imageUrl:'/img/thank.gif',
       title: `Gracias 😀 por contactarme <span class="rainbow-text">${result.correctValue[0].value}</span>`,
       width: 700,
       padding: '3em',
@@ -37,7 +37,7 @@ function submitForm(){
    
     
     Swal.fire({
-      imageUrl:'public/img/sad.gif',
+      imageUrl:'/img/sad.gif',
       title: 'Error :c',
       width: 350,
       height: 200,
