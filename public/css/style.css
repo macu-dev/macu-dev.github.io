@@ -232,7 +232,6 @@ html {
 }
 
 
-
 .overlay-img:hover{
   opacity:1;
   cursor: pointer;
@@ -266,6 +265,10 @@ html {
 
   }
 
+  .row-sobremi div:nth-child(3), .row-sobremi div:nth-child(6) {
+    padding-right: 0 !important;
+  }
+  
   .box-img{
     width: 150px;
     height: 100px;
@@ -313,6 +316,14 @@ html {
     font-size: 24px;
 
   }
+
+  .row-sobremi div:nth-child(1) .box-music .overlay-img .info-song, 
+  .row-sobremi div:nth-child(2) .box-music .overlay-img .info-song, 
+  .row-sobremi div:nth-child(3) .box-music .overlay-img .info-song, 
+  .row-sobremi div:nth-child(6) .box-music .overlay-img .info-song{
+    margin-top: 79%;
+  }
+
 }
 
 @media only screen and (max-width:768px) {
