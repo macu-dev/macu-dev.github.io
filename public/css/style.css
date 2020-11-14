@@ -274,6 +274,10 @@ html {
     height: 100px;
     padding:8px;
   }
+
+  .gallery-img{
+    height: auto !important;
+  }
 }
 
 @media (max-width: 460px) {
