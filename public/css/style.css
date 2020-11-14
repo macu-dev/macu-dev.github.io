@@ -399,7 +399,7 @@ html {
 }
 
 .parallax {
-  background-image: url("../img/parallax.jpg");
+  background-image: url("/img/parallax.jpg");
   background-color:rgba(230, 10, 219, 0.226);
   background-blend-mode:hard-light; 
   background-attachment: fixed;
