@@ -23,7 +23,7 @@ class Validator {
       let val = e.value;
 
       if (!this['validate'+ v.type](val, v.parameters)) {
-        errorMessages.push(`El contenido del campo <span class="fillname">'${v.fillname}'</span> con el valor '${val== "" ? val ='<span class="error-value">vacio</span>' : val}', es <span class="incorrect">incorrecto.</span>`);
+        errorMessages.push(`El contenido del campo <span class="fillname">'${v.fillname}'</span> con el valor <span class="error-value">'${val== "" ? val ='vacio' : val}'</span>, es <span class="incorrect">incorrecto.</span>`);
         
         if (this.errorClass !=='') {
           e.classList.add(this.errorClass);
@@ -31,7 +31,7 @@ class Validator {
           e.onkeyup = e.onchange;
         }
       }else{
-        correctValue.push({fillname: v.fillname, name: e.name, value: val   })
+        correctValue.push({fillname: v.fillname, name: e.name, value: val })
         console.log(val);
       }
     });

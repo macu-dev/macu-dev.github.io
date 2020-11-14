@@ -363,8 +363,25 @@ html {
 
 .gallery-img {
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  height: 185px;
 }
+
+.gallery-img a {
+  display: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-img a img {
+  width: 100%;
+  object-fit:cover ;
+  height: 100%;
+}
+
 
 #sobremi::before,
 #habilidades::before,
