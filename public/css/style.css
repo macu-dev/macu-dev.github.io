@@ -324,6 +324,10 @@ html {
     margin-top: 79%;
   }
 
+  .swal2-header{
+    padding: 0 !important;
+  }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -543,9 +547,6 @@ html {
   margin: 0 !important;
   height: 179px !important;
 }
-.swal2-header{
-  padding: 0 2em;
-}
 
 .swal2-content{
   padding: 0;
@@ -568,4 +569,36 @@ html {
 
 .swal2-title {
   margin: 0 0 .2em !important;
+  flex-wrap: wrap !important;
+  justify-content:center;
+}
+
+.error-value{
+  color: rgb(235, 37, 37);
+  font-family: "montserratbold";
+}
+
+.incorrect{
+  font-family: "Pacifico";
+}
+
+.fillname{
+  text-transform: capitalize;
+  color: #ff009dd3;
+  font-weight: bolder;
+}
+
+img[src="/public/img/thank.gif"]{
+  height: auto !important;
+}
+
+.rainbow-text{
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 8px;
+  text-align: center !important;
 }

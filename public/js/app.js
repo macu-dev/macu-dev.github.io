@@ -7,7 +7,7 @@ const form = document.getElementById('contact-form');
 const validator = new Validator('ierror');
 
 const values = [
-  {id: "name", fillname: "nombre completo", type: 'String', parameters: {min:2, max:20}},
+  {id: "name", fillname: "nombre completo", type: 'String', parameters: {min:2, max:100}},
   {id: "email", fillname: "email", type: 'EMail'},
   {id: "subject", fillname: "asunto", type: 'String', parameters: {min:2, max:80}},
   {id: "message", fillname: "mensaje", type: 'String', parameters: {min:4, max:200}}
@@ -17,24 +17,24 @@ function submitForm(){
   let result = validator.isValid(values);
   if (result.isvalid) {
     Swal.fire({
-      title: `Gracias 😀 por contactarme ${result.correctValue[0].value}`,
-      width: 600,
+      imageUrl:'/public/img/thank.gif',
+      title: `Gracias 😀 por contactarme <span class="rainbow-text">${result.correctValue[0].value}</span>`,
+      width: 700,
       padding: '3em',
       background: '#fff',
       backdrop: `
         rgba(0,0,123,0.4)
-        url("/public/img/thank.gif")
-        left top
-        no-repeat
       `,
-      
     })
 
     form.reset();
 
   } else {
 
-    let errorsDom = result.errorMessages.map( e =>`<p class="modalErrorMessage">${e}</p>`).join(""); 
+    let errorsDom = result.errorMessages.map( e =>`<p class="modalErrorMessage">${e}</p>`).join("");
+    console.log(result.errorMessages);
+
+   
     
     Swal.fire({
       imageUrl:'/public/img/sad.gif',
