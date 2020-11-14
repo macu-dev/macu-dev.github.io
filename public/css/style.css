@@ -368,6 +368,7 @@ html {
   align-items: center;
   margin: 0;
   height: 185px;
+  border:1px solid white;
 }
 
 .gallery-img a {
