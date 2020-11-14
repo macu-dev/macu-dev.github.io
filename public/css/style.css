@@ -540,7 +540,8 @@ html {
 }
 
 .swal2-image{
-  margin: 0;
+  margin: 0 !important;
+  height: 179px !important;
 }
 .swal2-header{
   padding: 0 2em;
@@ -555,3 +556,16 @@ html {
   border-bottom: 2px solid red !important;
 }
 
+.modalErrorMessage{
+  margin-bottom:5px !important;
+  font-size: 0.89rem !important;
+  text-align: center !important;
+}
+
+.swal2-styled.swal2-confirm{
+  background: linear-gradient(to right, rgba(189, 7, 92, 0.863), rgba(122, 2, 86, 0.8)) !important;
+}
+
+.swal2-title {
+  margin: 0 0 .2em !important;
+}

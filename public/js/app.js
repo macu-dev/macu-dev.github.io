@@ -23,7 +23,7 @@ function submitForm(){
       background: '#fff',
       backdrop: `
         rgba(0,0,123,0.4)
-        url("/img/thank.gif")
+        url("/public/img/thank.gif")
         left top
         no-repeat
       `,
@@ -37,7 +37,7 @@ function submitForm(){
     let errorsDom = result.errorMessages.map( e =>`<p class="modalErrorMessage">${e}</p>`).join(""); 
     
     Swal.fire({
-      imageUrl:'/img/sad.gif',
+      imageUrl:'/public/img/sad.gif',
       title: 'Error :c',
       width: 350,
       height: 200,
