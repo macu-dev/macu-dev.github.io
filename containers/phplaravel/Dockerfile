@@ -9,4 +9,4 @@ RUN rm -rf /usr/share/nginx/html ;\
     sed -i 's;/usr/share/nginx/html;/app/public;' /etc/nginx/conf.d/default.conf; \
     mkdir /app ; 
 
-ADD public /app
+ADD ../public /app
