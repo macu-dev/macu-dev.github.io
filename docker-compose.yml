@@ -15,7 +15,7 @@ services:
   mysql57:
     build: containers/mysql
     environment:
-      - MYSQL_ROOTPASSWORD=toor
+      - MYSQL_ROOT_PASSWORD=toor
     volumes:
       - /home/arwo/dockers/volumes/macu/mysql:/var/lib/mysql
       
