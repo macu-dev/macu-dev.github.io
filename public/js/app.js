@@ -13,31 +13,48 @@ const values = [
   {id: "message", fillname: "mensaje", type: 'String', parameters: {min:4, max:200}}
 ];
 
-function submitForm(){
+async function submitForm(){
   let result = validator.isValid(values);
   if (result.isvalid) {
-    Swal.fire({
-      imageUrl:'/img/thank.gif',
-      title: `Gracias 😀 por contactarme <span class="rainbow-text">${result.correctValue[0].value}</span>`,
-      width: 700,
-      padding: '3em',
-      background: '#fff',
-      backdrop: `
-        rgba(0,0,123,0.4)
-      `,
-    })
+    const response = await sendEMail(form);
+    const data = await response.json();
 
-    form.reset();
+    if( data.success) {
+      Swal.fire({
+        imageUrl:'img/thank.gif',
+        title: `Gracias 😀 por contactarme <span class="rainbow-text">${result.correctValue[0].value}</span>`,
+        width: 700,
+        padding: '3em',
+        background: '#fff',
+        backdrop: `
+          rgba(0,0,123,0.4)
+        `,
+      })
+
+      form.reset();
+    }else{
+      let errorsDom = data.fieldsErrors.map( e =>`<p class="modalErrorMessage">${e.slice(1)}</p>`).join("");
+      Swal.fire({
+        imageUrl:'img/sad.gif',
+        title: 'Error :c',
+        width: 350,
+        height: 200,
+        padding: '1em',
+        background: '#fff',
+        backdrop: `
+          rgba(0,0,123,0.4)`,
+        html: errorsDom,
+      })
+      
+    }
 
   } else {
 
     let errorsDom = result.errorMessages.map( e =>`<p class="modalErrorMessage">${e}</p>`).join("");
     console.log(result.errorMessages);
 
-   
-    
     Swal.fire({
-      imageUrl:'/img/sad.gif',
+      imageUrl:'img/sad.gif',
       title: 'Error :c',
       width: 350,
       height: 200,
@@ -51,6 +68,27 @@ function submitForm(){
     })
 
   }
+}
+
+
+
+//send email
+
+async function sendEMail(form){
+
+  try {
+    let response = await fetch("email.php", {
+      method: 'POST',
+      body: new FormData(form)
+    });
+  
+    return await response;
+    
+  } catch (error) {
+    console.log(error)
+  }
+
+
 }
 
 

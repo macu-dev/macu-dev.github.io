@@ -1,7 +1,7 @@
 version: '3'
 services:
   macudev:
-    build: ./containers/phplaravel
+    build: .
     restart: always
     container_name: macudev
     expose:
@@ -13,16 +13,7 @@ services:
       - VIRTUAL_PORT=3000
       - LETSENCRYPT_HOST=macu.ptah.tech
       - LETSENCRYPT_EMAIL=mariaclaudiaperezes@gmail.com
-    links:
-      - mysql57
 
-  mysql57:
-    build: containers/mysql
-    environment:
-      - MYSQL_ROOTPASSWORD=toor
-    volumes:
-      - /home/arwo/dockers/volumes/macu/mysql:/var/lib/mysql
-      
 networks:
   default:
      external:
