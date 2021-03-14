@@ -3,7 +3,7 @@ services:
   macudev:
     build: 
       context: .
-      dockerfile: ./containers/phplaravel
+      dockerfile: ./containers/phplaravel/Dockerfile
     restart: always
     container_name: macudev
     expose:
