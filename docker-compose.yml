@@ -1,15 +1,9 @@
 version: '3'
 services:
   macudev:
-    build: 
-      context: .
-      dockerfile: ./containers/phplaravel/Dockerfile
+    build: .
     restart: always
     container_name: macudev
-    expose:
-      - "80"
-    ports:
-      - "80:80"
     environment:
       - VIRTUAL_HOST=macu.ptah.tech
       - VIRTUAL_PORT=80

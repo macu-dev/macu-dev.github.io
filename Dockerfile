@@ -1,20 +1,12 @@
-FROM debian:latest
+FROM wyveo/nginx-php-fpm
 
-RUN set -x \
-  && apt-get update && apt install curl -y \
-  && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-  && apt-get install --no-install-recommends --no-install-suggests -y -qq nodejs supervisor \
-  && apt-get clean && rm -rf /tmp/*
+RUN rm -rf /usr/share/nginx/html ;\
+    apt update ;\
+    apt upgrade ;\
+    apt install -y vim;\
+    apt-get clean --dry-run; \
+    sed -i 's;try_files $uri $uri/ =404;try_files $uri $uri/ /index.php;' /etc/nginx/conf.d/default.conf; \
+    sed -i 's;/usr/share/nginx/html;/app/public;' /etc/nginx/conf.d/default.conf; \
+    mkdir /app ; 
 
-COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-#ADD Docker/default /etc/nginx/sites-enabled/
-ADD . /app
-
-RUN echo "Setup Configs..." \
-  && (cd /app && npm install)
-
-EXPOSE 3000
-
-STOPSIGNAL SIGTERM
-
-CMD ["/usr/bin/supervisord"]
+ADD ./public /app
