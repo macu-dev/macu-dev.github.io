@@ -90,7 +90,7 @@ function validation () {
 
 function isNotValidString ($field, $min , $max){
   return empty($field) || 
-        !preg_match("/^([a-zA-ZÀ-ÿ\u00f1\u00d1 ,']+[a-zA-ZÀ-ÿ\u00f1\u00d1.]+)+$/", $field) ||
+        !preg_match("/^([a-zA-ZÀ-ÿ\x{00f1}\x{00d1} ,']+[a-zA-ZÀ-ÿ\x{00f1}\x{00d1}.]+)+$/", $field) ||
         !(strlen($field) >= $min && strlen($field) <= $max );
 }
 
